@@ -1,0 +1,26 @@
+1.
+a. Pseudocode:
+Program Menampilkan Nilai Minimal, Maksimal, dan Mean suatu Matriks
+
+matrix: int[2][3]
+min, max, mean: float
+
+input matrix
+for i <- 0 in matrix:
+    for j <- 0 in matrix[i]:
+        if matrix[i][j] < min:
+	    min = matrix[i][j]
+	if matrix[i][j] > max:
+	    max = matrix[i][i]
+	mean = mean + matrix[i][j]
+mean = mean / (length(matrix) * length(matrix[0])
+output("Min: " + min")
+output("Max: " + max")
+output("Mean: " + mean")
+
+b. Algoritma:
+- Masukkan setiap nilai dalam matriks 2x6
+- Bandingkan jika nilai pada kolom saat ini dengan nilai pada kolom sebelumnya lebih kecil, maka perbarui nilai minimal
+- Bandingkan jika nilai pada kolom saat ini dengan nilai pada kolom sebelumnya lebih besar, maka perbarui nilai maksimal
+- Tambahkan nilai mean dengan setiap nilai pada kolom dan baris matriks dan kemudian bagi dengan jumlah sel pada matriks
+- Tampilkan nilai dari minimal, maksimal, dan mean
