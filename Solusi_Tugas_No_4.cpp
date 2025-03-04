@@ -1,16 +1,17 @@
 #include <iostream>
 using namespace std;
 
-// Fungsi untuk mengubah nilai menggunakan pointer
-void ubahNilai(int *ptr) {
-    *ptr = 20; // Mengubah nilai yang ditunjuk oleh pointer
-}
 
-int main() {
-    int Angka = 10;
-    int *PointerAngka = &Angka;
-    cout << "Sebelum perubahan: " << Angka << endl;
-    ubahNilai(PointerAngka); // Memanggil fungsi dengan pointer
-    cout << "Setelah perubahan: " << Angka << endl;
+int main(){
+    int angka = 20;
+    int *PointerAngka;
+
+    PointerAngka = &angka;
+
+    cout << "Nilai dari variabel angka : " << angka << endl;
+    cout << "Alamat dari variabel angka : " << &angka << endl;
+    cout << "Nilai yang ditunjuk oleh pointer : " << *PointerAngka << endl;
+    cout << "Alamat yang disimpan oleh pointer :  " << PointerAngka << endl;
+    
     return 0;
 }
