@@ -69,7 +69,7 @@ bg_image = bg_image.resize((480, 600))
 bg_photo = ImageTk.PhotoImage(bg_image)
 
 bg_label = tk.Label(root, image=bg_photo)
-bg_label.place(relwidth=1, relheight=1)
+bg_label.place(x=0, y=0)
 
 # Matrix box image
 box_image = Image.open(assetPath + "KalkulatorMatriks_Box.png")
