@@ -109,7 +109,7 @@ vector<Mahasiswa> ReadCSV(string &namaFile)
 
 int main()
 {
-    string namaFile = "data_nilai.csv";
+    string namaFile = "./Data/data_nilai.csv";
     vector<Mahasiswa> data = ReadCSV(namaFile);
 
     // Mengurutkan data menggunakan Exchange Sort
